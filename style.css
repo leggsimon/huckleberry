@@ -7,6 +7,79 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: 18px;
+  height: 100%;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: calc(var(--spacer) * 5);
+  font-size: 1.5rem
+}
+h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+:root {
+  --primaryGreen: hsl(160deg, 100%, 30%);
+  --goldLight: hsl(45deg, 100%, 50%);
+  --goldDark: hsl(45deg, 100%, 40%);
+  --black: hsl(0deg, 0%, 0%);
+  --greyDarkest: hsl(0deg, 0%, 10%);
+  --greyDark: hsl(0deg, 0%, 30%);
+  --greyMedium: hsl(0deg, 0%, 40%);
+  --greyLight: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+  --spacer: 8px;
 }
 
 /* Add styles here! */
+
+strong {
+  color: var(--primaryGreen)
+}
+
+header {
+  padding-top: calc(var(--spacer) * 12);
+  padding-bottom: calc(var(--spacer) * 5);
+}
+main {
+  background-color: var(--greyLight);
+  min-height: 100%;
+  border-top: var(--spacer) solid var(--greyDark);
+}
+
+.max-width-wrapper {
+  max-width: 630px;
+  margin-inline: auto;
+}
+
+.intro-chunk {
+  padding-inline: calc(var(--spacer) * 3);
+  padding-block: calc(var(--spacer) * 1);
+}
+
+.intro-chunk > p {
+  max-width: 330px;
+}
+
+.card {
+  margin-top: calc(var(--spacer) * 10);
+  max-width: 600px;
+  background-color: var(--white);
+  padding-inline: calc(var(--spacer) * 3);
+  padding-block: calc(var(--spacer) * 1);
+  border-bottom: var(--spacer) solid var(--greyDark);
+}
+
+.indented-heading {
+  font-size: 1.25rem;
+  background-color: var(--goldLight);
+  border-bottom: var(--spacer) solid var(--goldDark);
+  margin-left: calc(var(--spacer) * -4);
+  width: fit-content;
+  padding-block: calc(var(--spacer) * 2);
+  padding-inline: calc(var(--spacer) * 3);
+
+}
